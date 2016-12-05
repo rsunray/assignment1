@@ -1,0 +1,219 @@
+body {
+  background-color: aliceblue;
+  background-image: url(../img/);
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height:120px;
+  box-shadow: 3px 3px 3px #b8860b;
+  background-color: ghostwhite;
+  background-image: url("../img/");
+  margin-bottom: 20px;
+  z-index: 1;
+}
+header nav{
+  margin-left: 100px;
+  width: 40%;
+  height: inherit;
+  float: left;
+}
+header ul{
+  padding: 20px;
+  margin-top: 20px;
+}
+header ul li {
+  display: inline;
+  margin-left: 10px;
+  margin-top: 50px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: fantasy;
+}
+header ul li a{
+  font-family: sans-serif;
+  color: #20b2aa;
+  text-decoration: none;
+}
+header h1{
+  text-align: center;
+  letter-spacing: 5px;
+  width: 40%;
+  margin-left: 20px;
+  margin-top: 20px;
+  float: left;
+  display: inline;
+  font-size: 50px;
+  font-family: 'Acme', sans-serif;
+  font-weight: bolder;
+  text-shadow: 2px 2px #eeffee;
+  color: #000;
+}
+header img {
+  position: relative;
+  display: inline;
+  width: 10%;
+  float: left;
+  margin-left: 0px;
+  margin-right: 10px;
+  height: inherit;
+  border-right: 1px solid #EEE;
+  border-radius: 25px;
+}
+header a:hover{
+  color: green;
+  text-decoration: underline;
+}
+
+section {
+  position: static;
+  margin-top: 180px;
+  perspective: 1000px;
+  z-index: 0;
+}
+section div{
+  position: relative;
+  height: 220px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  transform-origin: center;
+  -web-kit-transform-origin: center;
+  -moz-transform-origin: center;
+}
+section img {
+  position: absolute;
+  width: inherit;
+  height: 220px;
+  box-shadow: 3px 3px 3px #b8860b;
+  backface-visibility: hidden;
+}
+section h2 {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 250%;
+  font-family: 'La Belle Aurore', cursive;
+  color: tomato;
+}
+section blockquote {
+  position: absolute;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background-color: whitesmoke;
+  border-left: 1px solid #EEE;
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 20px;
+  box-shadow: 3px 3px 3px #b8860b;
+  font-size: 150%;
+  height: 220px;
+}
+section blockquote::before{
+  content: "\201C";
+  font-size: 50px;
+  color: #999;
+}
+section blockquote:hover{
+  box-shadow: 0 0 30px aquamarine;
+}
+section img:hover{
+  box-shadow: 0 0 30px aquamarine;
+}
+section div:hover{
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+.hero{
+  position: static;
+  margin-top: 100px;
+  width: 1349px;
+  height: 600px;
+  background-color: honeydew;
+  background-position: center;
+  background-image: url("../img/");
+  background-repeat: no-repeat;
+  box-shadow: 0 0 10px #b8860b;
+  z-index: -1;
+}
+.hero p{
+  padding-left: 300px;
+  margin-bottom: 1px;
+  color: peru;
+  font-size: 50px;
+  text-shadow: 2px 2px #eeffee;
+  font-family: 'La Belle Aurore', cursive;
+}
+.hero iframe{
+  padding-left: 300px;
+  animation-name: heroinaction;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.hero iframe:hover{
+  animation-iteration-count: 0;
+  -webkit-animation-iteration-count: 0;
+  -moz-animation-iteration-count: 0;
+}
+
+article {
+  background-color: lightcyan;
+  position: static;
+  margin-top: 100px;
+  height: 400px;
+  border: 1px solid aqua;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #b8860b;
+}
+article img{
+  margin-top: 20px;
+  width: inherit;
+  height: inherit;
+}
+article div{
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: wheat;
+  position: static;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  height: 200px;
+  border: 1px solid green;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #b8860b;
+}
+footer div{
+  margin-top: 10px;
+}
+footer div p{
+  font-size: 120%;
+}
+footer div img{
+  margin-right: 30px;
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes heroinaction {
+  0% {opacity: 0;padding-left: 0px;}
+  25% {opacity: 0.25;padding-left: 240px;}
+  50% {opacity: 0.5;padding-left: 480px;}
+  75% {opacity: 0.75;padding-left: 600px;}
+  100%{opacity: 1;padding-left: 1200px;}
+}

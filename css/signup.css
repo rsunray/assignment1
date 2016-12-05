@@ -1,0 +1,102 @@
+body {
+  background-color: snow;
+  font-family: Georgia,sans-serif;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height:120px;
+  box-shadow: 3px 3px 3px #b8860b;
+  background-color: ghostwhite;
+  background-image: url("../img/");
+  margin-bottom: 20px;
+}
+header nav{
+  margin-left: 100px;
+  width: 40%;
+  height: inherit;
+  float: left;
+}
+header ul{
+  padding: 20px;
+  padding-left:20px;
+  margin-top: 20px;
+}
+header ul li {
+  display: inline;
+  margin-left: 10px;
+  margin-top: 50px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: fantasy;
+}
+header ul li a{
+  font-family: sans-serif;
+  color: #20b2aa;
+  text-decoration: none;
+}
+header h1{
+  text-align: center;
+  letter-spacing: 5px;
+  width: 40%;
+  margin-left: 20px;
+  margin-top: 20px;
+  float: left;
+  display: inline;
+  font-size: 50px;
+  font-family: 'Acme', sans-serif;
+  font-weight: bolder;
+  text-shadow: 2px 2px #eeffee;
+  color: #000;
+}
+header img {
+  position: relative;
+  display: inline;
+  width: 10%;
+  float: left;
+  margin-left: 0px;
+  margin-right: 10px;
+  height: inherit;
+  border-right: 1px solid #EEE;
+  border-radius: 25px;
+}
+
+section {
+  background-color: powderblue;
+  margin-left: auto;
+  position: static;
+  margin-top: 200px;
+  box-shadow: 0 0 10px #b8860b;
+  font-size: 150%;
+}
+section h1{
+  font-family: 'Chewy', cursive;
+  font-weight: bolder;
+  text-shadow: 0 0 10px white;
+  margin-top: 30px;
+  margin-left: 220px;
+}
+section div{
+  height: 300px;
+}
+section input{
+  width: 200px;
+  height: 40px;
+}
+section .labels li{
+  list-style: none;
+  margin-top: 30px;
+}
+section .inputs li{
+  list-style: none;
+  margin-top: 20px;
+}
+section .inputs li #submit{
+  margin-left: 50px;
+  width: 100px;
+}
